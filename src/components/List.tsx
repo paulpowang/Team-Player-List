@@ -1,12 +1,5 @@
 import React from "react";
-interface IProp {
-  people: {
-    name: string;
-    age: number;
-    url: string;
-    note?: string;
-  }[];
-}
+import { IState as IProp } from "../App";
 const List: React.FC<IProp> = ({ people }) => {
   const renderList = (): JSX.Element[] => {
     return people.map((person) => {
